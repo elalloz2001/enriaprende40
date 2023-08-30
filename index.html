@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Mi CV online</title>
+  </head>
+<body>
+<!-- Carga automatica de Bootstrap -->
+<h1>CV ONLINE - ARGENTINA PROGRAMA 4.0</h1>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- FIN Carga automatica de Bootstrap -->
+
+<!-- INICIO  script para leer los datos que aparecen en la pagina Web (foto y nombre) -->
+<script src="comienzo.js"></script>
+<!-- FIN script para extraer los otros datos personales que faltan -->
+
+<!-- INICIO de menu basico (3 opciones: datos-experiencia-estudios). Llama a funcion activar dentro del js.-->
+<div class="tab">
+  <button class="tablinks" onclick="activar(event, 'datos')">Datos personales</button>
+  <button class="tablinks" onclick="activar(event, 'experiencia')">Experiencia</button>
+  <button class="tablinks" onclick="activar(event, 'estudios')">Estudios</button>
+  <button class="tablinks" onclick="activar(event, 'ayuda')">Ayuda</button>
+ </div>
+ <!-- FIN de menu basico -->
+
+<!-- INICIO de contenedor para los datos (divs) -->
+<div id="datos" class="contenido">
+<h3>DATOS PERSONALES</h3>
+  <p id="foto"></p>
+  <p id="nombre"></p>
+  <p id="genero"></p>
+  <p id="ciudad"></p> 
+  <p id="email"></p>
+  <p id="telefono"></p>
+</div>
+<!-- FIN de contenedor para los datos (divs) -->
+
+<!-- INICIO de contenedor para experiencia. En el sitio mencionado no hay nada relacionado con esto por ende lo dejo vacío, no sé si esa era o no la idea -->
+<div id="experiencia" class="contenido">
+  <h3>EXPERIENCIA</h3>
+  <p>No se encontraron resultados acerca de la experiencia de esta persona con apellido y nombre: <div id="infoPersona"></div></p>
+</div>
+<!-- FIN de contenedor para experiencia. -->
+
+<!-- INICIO de contenedor para cursos. En el sitio mencionado no hay nada relacionado con esto por ende lo dejo vacío, no sé si esa era o no la idea -->
+<div id="estudios" class="contenido">
+  <h3>ESTUDIOS FORMALES Y CURSOS DE CAPACITACION</h3>
+  <p>No se encontraron resultados acerca de los estudios de esta persona</p>
+</div>
+<!-- FIN de contenedor para cursos. -->
+
+<div id="ayuda" class="contenido">
+  <h3>AYUDA</h3>
+  <p>Para mostrar la información de la persona que la API determina en forma aleatoria, se deberá hacer click en DATOS PERSONALES. La restante información no está presente en el JSON por lo que se ha dejado vacío. 
+  Si desea ver más información sobre lo que es un CV y distintas formas de diseñarlo, se puede hacer click <a href=https://orientacion-laboral.infojobs.net/10-consejos-hacer-un-buen-curriculum>aqui</p>
+</div>
+  
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
